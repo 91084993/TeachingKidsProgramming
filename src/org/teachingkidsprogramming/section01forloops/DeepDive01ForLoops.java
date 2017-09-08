@@ -25,17 +25,17 @@ public class DeepDive01ForLoops
   @Test
   public void defaultWidthForTheTortoise() throws Exception
   {
-    Assert.assertEquals(Tortoise.getPenWidth(), 5);
+    Assert.assertEquals(Tortoise.getPenWidth(), 10);
   }
   @Test
   public void stringsNeedQuotes() throws Exception
   {
-    Assert.assertEquals("Green", ___);
+    Assert.assertEquals("Green", "Green");
   }
   @Test
   public void stringsCanIncludeSpaces() throws Exception
   {
-    Assert.assertEquals("This is a string", ___);
+    Assert.assertEquals("This is a string", "This is a string");
   }
   @Test
   public void changingThePenWidthTo5() throws Exception
