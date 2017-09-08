@@ -20,12 +20,12 @@ public class DeepDive01ForLoops
   @Test
   public void numbersDoNotNeedQuotes()
   {
-    Assert.assertEquals(42, ____);
+    Assert.assertEquals(42, 42);
   }
   @Test
   public void defaultWidthForTheTortoise() throws Exception
   {
-    Assert.assertEquals(Tortoise.getPenWidth(), ____);
+    Assert.assertEquals(Tortoise.getPenWidth(), 5);
   }
   @Test
   public void stringsNeedQuotes() throws Exception
