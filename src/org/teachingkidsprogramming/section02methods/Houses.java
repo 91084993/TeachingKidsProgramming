@@ -7,9 +7,8 @@ public class Houses
   public static void main(String[] args)
   {
     Tortoise.show();
-    //   Make the tortoise move as fast as possible --#11
     Tortoise.move(10);
-    //   Have the tortoise start at 200 pixels in on the X axis --#14
+    Tortoise.setX(200);
     //   The current height is 40 --#1.2
     //   drawHouse (recipe below) --#9.1
     //   ------------- Recipe for drawHouse --#9.2
