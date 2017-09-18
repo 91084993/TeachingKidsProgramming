@@ -9,7 +9,6 @@ public class FourSquare
   {
     Tortoise.show();
     Tortoise.setSpeed(10);
-    //  Do the following 4 times --#8.1
     for (int i = 0; i < 4; i++)
     {
       drawSquare();

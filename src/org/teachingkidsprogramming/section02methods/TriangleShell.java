@@ -1,5 +1,7 @@
 package org.teachingkidsprogramming.section02methods;
 
+import org.teachingextensions.logo.Tortoise;
+
 @SuppressWarnings("unused")
 public class TriangleShell
 {
@@ -7,6 +9,7 @@ public class TriangleShell
   public static void main(String[] args)
   {
     // Show the tortoise --#1
+    Tortoise.show();
     // Make the tortoise go as fast as possible --#6
     // Do the following 60 times --#7.1
     //      Change the pen color of the line the tortoise draws to a random color --#9
