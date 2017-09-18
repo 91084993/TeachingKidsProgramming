@@ -35,10 +35,9 @@ public class HousesB
     Tortoise.turn(0);
     Tortoise.turn(-90);
     Tortoise.move(100);
-    Tortoise.turn(45);
-    Tortoise.move(45);
-    Tortoise.turn(135);
-    Tortoise.move(140);
+    Tortoise.turn(120);
+    Tortoise.move(33);
+    Tortoise.turn(100);
   }
   //define a method called drawSlantedRoof
   private static void drawHousePointyRoof(int height)
