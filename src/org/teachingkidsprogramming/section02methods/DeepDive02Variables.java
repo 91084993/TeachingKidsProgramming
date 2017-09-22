@@ -29,7 +29,7 @@ public class DeepDive02Variables
   @Test
   public void youCanDoMathWithVariables() throws Exception
   {
-    int i = 3 + 4;
+    int ____ = 3 + 4;
     Assert.assertEquals(7, numberOfHarryPotterBooks);
   }
   @Test
