@@ -1,5 +1,7 @@
 package org.teachingkidsprogramming.section03ifs;
 
+import java.util.Random;
+
 import org.teachingextensions.logo.Sound;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
@@ -7,7 +9,12 @@ public class HiLow
 {
   public static void main(String[] args)
   {
-    int answer = 11;
+    Random rand = new Random();
+    int answer = rand.nextInt(100) + 1;
+    // int answer = (int) (Math.random() * 100 + 1);
+    //                                max^ min^
+    System.out.println("The answer is" + answer);
+    //int answer = 41;
     for (int i = 1; i <= 8; i++)
     {
       int guess = MessageBox.askForNumericalInput("What is your guess?");
