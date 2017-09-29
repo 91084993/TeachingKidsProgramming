@@ -7,7 +7,6 @@ public class HiLow
 {
   public static void main(String[] args)
   {
-    //    Choose a random number between 1 and 100 --#4.1 (fake!) & --#13
     int answer = 11;
     for (int i = 1; i <= 8; i++)
     {
