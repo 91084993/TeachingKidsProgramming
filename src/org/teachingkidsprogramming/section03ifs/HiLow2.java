@@ -14,7 +14,7 @@ public class HiLow2
     int answer = rand.nextInt(100) + 1;
     // int answer = (int) (Math.random() * 100 + 1);
     //                                max^ min^
-    System.out.println("The answer is" + answer);
+    //System.out.println("The answer is" + answer);
     //int answer = 41;
     for (int i = 1; i <= 8; i++)
     {
