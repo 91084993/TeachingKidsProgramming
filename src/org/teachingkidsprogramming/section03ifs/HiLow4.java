@@ -19,7 +19,10 @@ public class HiLow4
     int upperRange = 100;
     for (int i = 1; i <= 8; i++)
     {
-      MessageBox.showMessage("Please enter a guess between 1 and 100");
+      if (i == 1)
+      {
+        MessageBox.showMessage("Please enter a guess between 1 and 100");
+      }
       int guess = MessageBox.askForNumericalInput("What is your guess?");
       //input validation
       while (guess < 1 || guess > upperRange)
