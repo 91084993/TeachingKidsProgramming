@@ -37,10 +37,6 @@ public class HiLow2
       {
         MessageBox.showMessage("You lost");
       }
-      if (i == 1)
-      {
-        MessageBox.showMessage("You have 7 tries left");
-      }
     }
   }
 }
