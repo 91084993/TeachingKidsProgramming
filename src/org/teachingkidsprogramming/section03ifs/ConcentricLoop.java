@@ -18,12 +18,12 @@ public class ConcentricLoop
       Tortoise.turn(1);
       if (i % 20 == 0)
       {
-      }
-      for (int j = 0; j < 360; j++)
-      {
-        Tortoise.move(1);
-        Tortoise.turn(1);
-        Tortoise.setPenWidth(1 / 100);
+        for (int j = 0; j < 360; j++)
+        {
+          Tortoise.move(1);
+          Tortoise.turn(1);
+          Tortoise.setPenWidth(i / 100);
+        }
       }
     }
   }
