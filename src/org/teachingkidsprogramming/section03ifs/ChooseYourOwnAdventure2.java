@@ -7,7 +7,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventure2
 {
   public static void main(String[] args)
   {
@@ -24,24 +24,26 @@ public class ChooseYourOwnAdventure
     }
     else if ("explore".equalsIgnoreCase(action))
     {
-      //      approachOoze (recipe below) --#4.1
       approachOoze();
     }
     else
     {
-      //      endStory (recipe below) --#6.1
-      //      ------------- Recipe for endStory --#6.2
-      //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
-      //      ------------- End of endStory recipe --#6.3
+      endStory();
     }
+  }
+  private static void endStory()
+  {
+    MessageBox.showMessage("You Don't know how to read directions. You can't play this game. The end.");
   }
   private static void approachOoze()
   {
-    //      ------------- Recipe for approachOoze --#4.2
     MessageBox.showMessage(
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
-    //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
+    MessageBox.showMessage("Do you want to pour the ooze into the 'backyard' or toilet'?");
     //         If they answer "toilet" --#8.1
+    if (answer == "toilet")
+    {
+    }
     //            pourIntoToilet (recipe below) --#12.1
     //            ------------- Recipe for pourIntoToilet --#12.2
     //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
@@ -67,11 +69,10 @@ public class ChooseYourOwnAdventure
     //         ------------- End of pourIntoBackyard recipe --#19.3
     //         Otherwise, if they answer anything else --#8.3
     //            endStory --#9
-    //      ------------- End of approachOoze recipe --#4.3
   }
   private static void wakeUp()
   {
-    MessageBox.showMessage("You wake up and have a boring day. The end.");
+    MessageBox.showMessage("You wake up and havae a boring day. The end");
   }
   private static void animateStartStory()
   {
