@@ -41,9 +41,8 @@ public class ChooseYourOwnAdventure
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
     MessageBox.showMessage("Do you want to pour the ooze into the 'backyard' or toilet'?");
     //         If they answer "toilet" --#8.1
-    if ()
+    if (answer == "toilet")
     {
-      
     }
     //            pourIntoToilet (recipe below) --#12.1
     //            ------------- Recipe for pourIntoToilet --#12.2
