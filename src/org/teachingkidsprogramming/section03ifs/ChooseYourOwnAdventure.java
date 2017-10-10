@@ -24,50 +24,59 @@ public class ChooseYourOwnAdventure
     }
     else if ("explore".equalsIgnoreCase(action))
     {
-      //      approachOoze (recipe below) --#4.1
       approachOoze();
     }
     else
     {
-      //      endStory (recipe below) --#6.1
-      //      ------------- Recipe for endStory --#6.2
-      //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
-      //      ------------- End of endStory recipe --#6.3
+      endStory();
     }
+  }
+  private static void endStory()
+  {
+    MessageBox.showMessage("You don't know how to read directions. You can't play this game. The end.");
   }
   private static void approachOoze()
   {
-    //      ------------- Recipe for approachOoze --#4.2
     MessageBox.showMessage(
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
-    //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
+    String answer = MessageBox.askForTextInput("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
     //         If they answer "toilet" --#8.1
-    //            pourIntoToilet (recipe below) --#12.1
-    //            ------------- Recipe for pourIntoToilet --#12.2
-    //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
-    //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
-    //               If they answer "yes" --#13.1
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-    //               Otherwise, if they answer "heck yes" --#13.2
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-    //               Otherwise, if they answer anything else --#13.3
-    //                    endStory --#16
-    //            ------------- End of pourIntoToilet recipe --#12.3
+    if ("toilet".equalsIgnoreCase(answer))
+    {
+      //            pourIntoToilet (recipe below) --#12.1
+      //            ------------- Recipe for pourIntoToilet --#12.2
+      MessageBox.showMessage(
+          "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
+      //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
+      MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
+      //               If they answer "yes" --#13.1
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+      //               Otherwise, if they answer "heck yes" --#13.2
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+      //               Otherwise, if they answer anything else --#13.3
+      //                    endStory --#16
+      //            ------------- End of pourIntoToilet recipe --#12.3
+    }
     //         Otherwise, if they answer "backyard" --#8.2
-    //            pourIntoBackyard (recipe below) --#19.1
-    //            ------------- Recipe for pourIntoBackyard --#19.2
-    //                Tell the user "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water." --#17
-    //                Ask the user "As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?" --#18
-    //                If they answer "faint" --#20.1
-    //                        Tell the user "You made a delicious soup! Yum! The end." --#21
-    //                Otherwise, if they answer "scream" --#20.2
-    //                    startStory --#22
-    //                Otherwise, if they answer anything else --#20.3
-    //                    endStory --#23
-    //         ------------- End of pourIntoBackyard recipe --#19.3
+    else if ("backyard".equalsIgnoreCase(answer))
+    {
+      //            pourIntoBackyard (recipe below) --#19.1
+      //            ------------- Recipe for pourIntoBackyard --#19.2
+      //                Tell the user "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water." --#17
+      //                Ask the user "As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?" --#18
+      //                If they answer "faint" --#20.1
+      //                        Tell the user "You made a delicious soup! Yum! The end." --#21
+      //                Otherwise, if they answer "scream" --#20.2
+      //                    startStory --#22
+      //                Otherwise, if they answer anything else --#20.3
+      //                    endStory --#23
+      //         ------------- End of pourIntoBackyard recipe --#19.3
+    }
     //         Otherwise, if they answer anything else --#8.3
-    //            endStory --#9
-    //      ------------- End of approachOoze recipe --#4.3
+    else
+    {
+      endStory();
+    }
   }
   private static void wakeUp()
   {
