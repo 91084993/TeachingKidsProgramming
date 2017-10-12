@@ -43,19 +43,7 @@ public class ChooseYourOwnAdventure
     //         If they answer "toilet" --#8.1
     if ("toilet".equalsIgnoreCase(answer))
     {
-      //            pourIntoToilet (recipe below) --#12.1
-      //            ------------- Recipe for pourIntoToilet --#12.2
-      MessageBox.showMessage(
-          "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-      //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
-      MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
-      //               If they answer "yes" --#13.1
-      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-      //               Otherwise, if they answer "heck yes" --#13.2
-      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-      //               Otherwise, if they answer anything else --#13.3
-      //                    endStory --#16
-      //            ------------- End of pourIntoToilet recipe --#12.3
+      pourIntoToilet();
     }
     //         Otherwise, if they answer "backyard" --#8.2
     else if ("backyard".equalsIgnoreCase(answer))
@@ -77,6 +65,26 @@ public class ChooseYourOwnAdventure
     {
       endStory();
     }
+  }
+  private static void pourIntoToilet()
+  {
+    //            pourIntoToilet (recipe below) --#12.1
+    //            ------------- Recipe for pourIntoToilet --#12.2
+    MessageBox.showMessage(
+        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
+    String answer = MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
+    //               If they answer "yes" --#13.1
+    if ("Yes".equalsIgnoreCase(answer))
+    {
+      
+    } 
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+    //               Otherwise, if they answer "heck yes" --#13.2
+    else if ("HECK YES".equalsIgnoreCase(answer))
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+    //               Otherwise, if they answer anything else --#13.3
+    //                    endStory --#16
+    //            ------------- End of pourIntoToilet recipe --#12.3
   }
   private static void wakeUp()
   {
