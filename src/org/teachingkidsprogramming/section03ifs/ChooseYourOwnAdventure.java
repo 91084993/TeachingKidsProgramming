@@ -68,23 +68,23 @@ public class ChooseYourOwnAdventure
   }
   private static void pourIntoToilet()
   {
-    //            pourIntoToilet (recipe below) --#12.1
-    //            ------------- Recipe for pourIntoToilet --#12.2
     MessageBox.showMessage(
         "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
     String answer = MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
-    //               If they answer "yes" --#13.1
-    if ("Yes".equalsIgnoreCase(answer))
+    if (answer.equalsIgnoreCase("yes"))
     {
-      
-    } 
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-    //               Otherwise, if they answer "heck yes" --#13.2
-    else if ("HECK YES".equalsIgnoreCase(answer))
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-    //               Otherwise, if they answer anything else --#13.3
-    //                    endStory --#16
-    //            ------------- End of pourIntoToilet recipe --#12.3
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+      MessageBox
+          .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
+    }
+    else if (answer.equalsIgnoreCase("HECK YES"))
+    {
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+    }
+    else
+    {
+      //                    endStory --#16
+    }
   }
   private static void wakeUp()
   {
