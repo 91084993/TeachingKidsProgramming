@@ -7,7 +7,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventure3
 {
   public static void main(String[] args)
   {
@@ -40,10 +40,12 @@ public class ChooseYourOwnAdventure
     MessageBox.showMessage(
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
     String answer = MessageBox.askForTextInput("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
+    //         If they answer "toilet" --#8.1
     if ("toilet".equalsIgnoreCase(answer))
     {
       pourIntoToilet();
     }
+    //         Otherwise, if they answer "backyard" --#8.2
     else if ("backyard".equalsIgnoreCase(answer))
     {
       //            pourIntoBackyard (recipe below) --#19.1
@@ -58,6 +60,7 @@ public class ChooseYourOwnAdventure
       //                    endStory --#23
       //         ------------- End of pourIntoBackyard recipe --#19.3
     }
+    //         Otherwise, if they answer anything else --#8.3
     else
     {
       endStory();
@@ -74,7 +77,7 @@ public class ChooseYourOwnAdventure
       MessageBox
           .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
     }
-    else if (answer.equalsIgnoreCase("heck yes"))
+    else if (answer.equalsIgnoreCase("HECK YES"))
     {
       //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
     }
