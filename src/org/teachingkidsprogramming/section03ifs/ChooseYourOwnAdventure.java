@@ -46,7 +46,6 @@ public class ChooseYourOwnAdventure
     }
     else if ("backyard".equalsIgnoreCase(answer))
     {
-      //            pourIntoBackyard (recipe below) --#19.1
       pourIntoBackyard();
     }
     else
@@ -56,17 +55,22 @@ public class ChooseYourOwnAdventure
   }
   private static void pourIntoBackyard()
   {
-    //            ------------- Recipe for pourIntoBackyard --#19.2
     MessageBox.showMessage(
         "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water.");
-    MessageBox.askForTextInput("As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?");
-    //                If they answer "faint" --#20.1
-    //                        Tell the user "You made a delicious soup! Yum! The end." --#21
-    //                Otherwise, if they answer "scream" --#20.2
-    //                    startStory --#22
-    //                Otherwise, if they answer anything else --#20.3
-    //                    endStory --#23
-    //         ------------- End of pourIntoBackyard recipe --#19.3
+    String answer = MessageBox
+        .askForTextInput("As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?");
+    if (answer.equalsIgnoreCase("faint"))
+    {
+      MessageBox.showMessage("You made a delicious soup! Yum! The end.");
+    }
+    else if (answer.equalsIgnoreCase("scream"))
+    {
+      startStory();
+    }
+    else
+    {
+      endStory();
+    }
   }
   private static void pourIntoToilet()
   {
