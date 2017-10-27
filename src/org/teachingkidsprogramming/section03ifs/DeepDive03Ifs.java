@@ -227,11 +227,42 @@ public class DeepDive03Ifs
   // our very first test! :)
   //
   @Test
-  public void testTest() throws Exception
+  public void cyoaWakeUpTest() throws Exception
   {
-    String result = MessageBox.askForTextInput("What day is it?");
+    String result = MessageBox.askForTextInput("Do you want to 'wake up' or 'explore' the dream? ");
     // test that user entered "wake up"
-    Assert.assertEquals(result, "Thursday");
+    Assert.assertEquals(result, "wake up");
+  }
+  @Test
+  public void cyoaNoAnswerInputTest2() throws Exception
+  {
+    String result = MessageBox.askForTextInput("Do you want to  'wake up' or 'explore' the dream? ");
+    Assert.assertEquals("", result);
+  }
+  @Test
+  public void ifStatements() throws Exception
+  {
+    String teacherSays = "may";
+    if (false)
+    {
+      teacherSays = "can";
+    }
+    Assert.assertEquals("may", teacherSays);
+  }
+  @Test
+  public void ifScrewIsLoose() throws Exception
+  {
+    String tightenTheBolt = "";
+    int NumberOfTurns = ____;//  any number lower than 7
+    if (NumberOfTurns < 7)
+    {
+      tightenTheBolt = "Your wheel was too lose and you fall!";
+    }
+    else
+    {
+      tightenTheBolt = "Your wheel is tigthened just right!";
+    }
+    Assert.assertEquals("Your wheel was too lose and you fall!", tightenTheBolt);
   }
   /**
    * Ignore the following, It's needed to run the deep dive
