@@ -13,8 +13,7 @@ public class DigiFlower
     Tortoise.show();
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.Silver);
-    //    Make the line the tortoise draws 3 pixels wide --#15
-    //        Do the following 15 times --#13.1
+    Tortoise.setPenWidth(3);
     for (int i = 0; i < 15; i++)
     {
       Tortoise.turn(360 / 15);
