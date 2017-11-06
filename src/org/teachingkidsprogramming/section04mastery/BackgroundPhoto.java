@@ -15,17 +15,16 @@ public class BackgroundPhoto
     Tortoise.show();
     Tortoise.setSpeed(10);
     int side = 2;
-    //  Do the following 75 times --#7.1
-    //     Set the current pen color to yellow --#6.1
-    Color currColor = PenColors.Yellows.Yellow;
-    Tortoise.setPenColor(currColor);
-    //     Use the current pen color for the line the tortoise draws --#6.2
-    side++;
-    Tortoise.move(side);
-    Tortoise.setX(555);
-    Tortoise.setY(65);
-    Tortoise.turn(360 / 3);
-    Tortoise.turn(1);
-    //  End Repeat --#7.2
+    for (int i = 0; i < 75; i++)
+    {
+      Color currColor = PenColors.Yellows.Yellow;
+      Tortoise.setPenColor(currColor);
+      side++;
+      Tortoise.move(side);
+      Tortoise.setX(555);
+      Tortoise.setY(65);
+      Tortoise.turn(360 / 3);
+      Tortoise.turn(1);
+    }
   }
 }
