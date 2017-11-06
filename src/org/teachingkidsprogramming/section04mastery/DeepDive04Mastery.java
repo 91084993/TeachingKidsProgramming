@@ -20,19 +20,19 @@ public class DeepDive04Mastery
   public void theseNumbersCount() throws Exception
   {
     Integer number = 2;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Integer.class);
   }
   @Test
   public void textTypes() throws Exception
   {
     String text = "Beans";
-    Assert.assertEquals(text.getClass(), ______.class);
+    Assert.assertEquals(text.getClass(), String.class);
   }
   @Test
   public void theNumbersAfterTheDot() throws Exception
   {
     Double number = 2.3;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Double.class);
   }
   @Test
   public void everythingIsAnObject() throws Exception
