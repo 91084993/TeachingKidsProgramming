@@ -14,7 +14,6 @@ public class TreeQuiz extends TreeQuizAdapter
     decreaseTurn();
     //
     //   Question 3 
-    //   setNinety (recipe below) 
     setNinety();
     //
     //   Question 4 
@@ -22,11 +21,7 @@ public class TreeQuiz extends TreeQuizAdapter
   }
   private void angleFive()
   {
-    //   angleFive (recipe below) 
-    //   ------------- Recipe for angleFive 
-    //       sets the 5th angle to 36 degrees
     angles.put(5, 36);
-    //   ------------- End of angleFive recipe
   }
   private void setNinety()
   {
