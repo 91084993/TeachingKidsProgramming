@@ -1,8 +1,16 @@
 package org.teachingkidsprogramming.section09final;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
+import org.teachingkidsprogramming.recipes.inDevelopment.forLoopUpdate;
+
 public class FizzBuzz
 {
   //   For the whole numbers from 1 to 100, print either that number, or, 
+  for ( int i = 1; i < 100; i++)
+  {
+    System.out.print(i);
+  }
   //    If that number is divisible by 3, then print the word 'Fizz', 
   //    If that number is divisible by 5, then print the word 'Buzz', 
   //    If that number is divisible by 3 and 5, then print the word 'FizzBuzz'
