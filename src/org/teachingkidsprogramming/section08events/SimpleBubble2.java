@@ -8,10 +8,10 @@ import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MouseLeftClickListener;
 import org.teachingextensions.logo.utils.LineAndShapeUtils.Circle;
 
-public class SimpleBubble implements MouseLeftClickListener
+public class SimpleBubble2 implements MouseLeftClickListener
 {
   ProgramWindow programWindow; // this is a class level variable (member variable)
-  public SimpleBubble()
+  public SimpleBubble2()
   {
     programWindow = new ProgramWindow("My Bubble");
     programWindow.setWindowVisible(true);
@@ -32,7 +32,6 @@ public class SimpleBubble implements MouseLeftClickListener
   }
   private void createBubble(int x, int y)
   {
-    programWindow.clearWindow();
     Random random = new Random();
     int radius = random.nextInt(41) + 10;
     Circle circle = new Circle(radius, ColorWheel.getNextColor());
@@ -41,6 +40,6 @@ public class SimpleBubble implements MouseLeftClickListener
   }
   public static void main(String[] args)
   {
-    new SimpleBubble();
+    new SimpleBubble2();
   }
 }
